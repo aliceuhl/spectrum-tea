@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="shape-orange" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 1200 100" style="enable-background:new 0 0 1200 100;" xml:space="preserve">
+	<!-- Filter: Dropshadow for shape-orange -->
+	<filter id="shadow-shape-orange" height="150%">
+	  <feGaussianBlur in="SourceAlpha" stdDeviation="7"/> <!-- stdDeviation is how much to blur -->
+	  <feOffset dx="10" dy="0" result="offsetblur"/> <!-- how much to offset -->
+	  <feMerge> 
+		<feMergeNode/> <!-- this contains the offset blurred image -->
+		<feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+	  </feMerge>
+	</filter>
+<style type="text/css">
+	.st0{fill:#BF3606;}
+</style>
+<polygon class="st0" points="1200,0 1200,100 0,100" filter="url(#shadow-shape-orange)"/>
+</svg>

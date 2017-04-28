@@ -1,0 +1,32 @@
+//SVG shapes
+$shape-grn-yellow: url("../img/shapes/shape-grn-yellow.svg");
+$shape-orange: url("../img/shapes/shape-orange.svg");
+
+html{
+	color: white;
+}
+
+body{
+	background-image: $shape-grn-yellow;
+	background-position: left;
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 999;
+	background-color: $bg-color;
+}
+
+.shape-bg-container{
+	background-image: $shape-grn-yellow;
+	background-position: left;
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 999;
+}
+
+.svg-orange{
+	background: $shape-orange;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}

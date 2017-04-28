@@ -1,0 +1,90 @@
+section{
+	@include span-columns(12);
+	padding: 60px 0;
+	margin: 0;
+}
+//About, Contact Container Flexbox
+.about-container, .contact-container{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.about{
+	.about-desc{
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: center;
+		@include span-columns(6);
+			p{
+				@include span-columns(3 of 6);
+					@include media($mobile){
+						@include span-columns(4 of 4);
+						width: 100%;
+						padding: 0;
+					}
+					@include media($tablet){
+						@include span-columns(3 of 6);
+						width: 100%;
+						padding: 0;
+					}
+				}
+			}
+	.about-icons{
+		margin-top: 10px;
+		
+			@include media($mobile){
+						display: none;
+					}
+	}
+} 
+
+//Pricing Plans
+.plans{
+	p{
+		text-align: center;	
+		padding: 10px 40px;
+		
+	}
+
+}
+
+//Contact Page
+form{
+	padding: 0 em(25);
+	@include span-columns(6);	
+	
+		@include media($mobile){
+			@include span-columns(4);	
+		}
+	label{
+		color: $brand-orange;
+	}
+	input{
+		display: block;
+		width: 100%;
+		padding: 10px 30px 15px 10px;
+		margin-bottom: 20px;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		border-bottom: 2px solid $brand-orange;
+
+		&:focus{
+			outline: none;
+		}
+	}
+	textarea:focus{
+		outline: none;
+		margin-bottom: 10px;
+	}
+}	
+
+.btn-contact {
+	height: 45px;
+	width: 170px;
+	font-size: 1.25em;	
+	margin: auto 0;
+}

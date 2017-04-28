@@ -1,0 +1,15 @@
+@mixin centering($v:v-center, $h:h-center){
+	@if ($v and $h){
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	@elseif($v){
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	@elseif($h){
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

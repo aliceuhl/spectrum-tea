@@ -1,0 +1,100 @@
+$bg-card-color: #000;
+$border-color: transparent;
+$border-radius: 4px;
+
+.pricing-plans-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	
+	//Breakpoints
+	@include media($tablet){
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	@include media($mobile){
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
+
+.pricing-plan-card {
+	width: 300px;
+		
+		@include media($tablet){
+			width: 100%;
+		}
+		@include media($mobile){
+			width: 100%;
+		}
+}
+
+.plan-card {
+	border-radius: $border-radius;
+	background-color: darken($bg-secondary-color, 7%);
+	cursor: pointer;
+	position: relative;
+	transition: all 0.1s ease-in;
+	text-align: center;
+	margin: 0 1em 2em 1em;
+	box-shadow: 0 8px 25px #000;
+	
+			@include media($tablet){
+				height: auto;
+				min-height: 275px;
+				margin: 0 5em 1.5em 5em;
+			}
+	
+	.plan-header {
+		background-color: $bg-secondary-color;
+		padding: 1px 0;
+		border-top-left-radius: $border-radius;
+		border-top-right-radius: $border-radius;
+	}
+}
+
+
+
+.plan {
+	padding: 25px 0;
+	
+	.plan-img {
+		height: 130px;
+		max-height: 150px;
+		overflow: hidden;
+		display: block;
+		img {
+			height: 125px;
+		}
+			@include media($tablet){
+				float: left;
+				padding-left: 65px;
+			}
+	}
+	.plan-desc {
+		font-weight: $title-font-weight;
+		font-size: 1.50em;
+			@include media($tablet){
+				float: right;
+				padding-top: 20px;
+				padding-right: 65px;
+
+				
+				h3{
+					padding-bottom: 10px;
+					margin: 0;
+				}
+			}
+	}
+}
+
+.btn-plan {
+	height: 40px;
+	width: 160px;	
+		@include media($tablet){
+			float: right;
+		}
+}

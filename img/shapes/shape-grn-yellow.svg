@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="shape-grn-yellow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 1200 1500" style="enable-background:new 0 0 1200 1500;" xml:space="preserve">
+<defs>
+	<!-- Filter: Dropshadow for shape-green -->
+	<filter id="shadow-shape-green" height="150%">
+	  <feGaussianBlur in="SourceAlpha" stdDeviation="7"/> 
+	  <feOffset dx="10" dy="0" result="offsetblur"/> 
+	  <feMerge> 
+		<feMergeNode/> 
+		<feMergeNode in="SourceGraphic"/> 
+	  </feMerge>
+	</filter>
+	
+	<!-- Filter: Dropshadow for shape-yellow -->
+	<filter id="shadow-shape-yellow" height="150%">
+	  <feGaussianBlur in="SourceAlpha" stdDeviation="2"/> 
+	  <feOffset dx="-2" dy="5" result="offsetblur"/> 
+	  <feMerge> 
+		<feMergeNode/> 
+		<feMergeNode in="SourceGraphic"/>
+	  </feMerge>
+	</filter>
+</defs>
+
+<style type="text/css">
+	.grn{fill:#A0A32B;}
+	.yellow{fill:#4F752C;}
+</style>
+<polygon class="grn" points="1200, 550 0, 1350 0, 180" filter="url(#shadow-shape-green)"/>
+<polygon class="yellow" points="1200, 550 0, 1200 0, 140 " filter="url(#shadow-shape-yellow)"/>
+</svg>

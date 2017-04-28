@@ -1,0 +1,19 @@
+//Footer
+footer {
+  	@include outer-container(100%);
+	@include span-columns(12);
+	height: 280px;
+}
+
+.follow-us{
+	margin: 50px 0;
+	text-align: center;
+	
+	//Font Awesome
+	i, fa{
+		padding: 10px 10px;
+		color: $brand-orange;
+	}
+}
+
+

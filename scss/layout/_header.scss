@@ -1,0 +1,22 @@
+//Hero Image
+$logo-img: url("../img/logo/logo.svg");
+$logo-height: 325px;
+$logo-width: 325px;
+
+.hero{
+	@include span-columns(12);
+	padding: 150px 0;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo-brand{
+	height: $logo-height;
+	width: $logo-width;
+	min-height: 325px;
+	//min-width: 325px;
+	background: $logo-img center center no-repeat;
+}
+
+
+

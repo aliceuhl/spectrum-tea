@@ -1,0 +1,17 @@
+$grid-columns: 12;
+//Outer Container
+.container{
+	@include outer-container(100%);
+	@include span-columns(12);
+	margin-right: 0;
+}
+//Rows
+
+.row{
+	@include row();
+}
+
+$mobile: new-breakpoint(min-width 320px max-width 480px 4);
+$tablet: new-breakpoint(min-width 481px max-width 768px 6);
+$desktop: new-breakpoint(min-width 769px max-width 960px 12);
+$large-desktop: new-breakpoint(min-width 960px max-width 1920px 12);

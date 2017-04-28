@@ -1,0 +1,29 @@
+svg,.cup.gift.heart{
+	height: inherit;
+	width: 100%;
+}
+
+.cup,.gift,.heart {
+
+	fill: none;
+	stroke:$brand-orange;
+	stroke-width: 4px;
+	stroke-miterlimit: 10;
+	stroke-linecap: round;
+}
+
+
+.heart {
+	stroke-dasharray: 299.0033264160156px;
+	animation: h-visible .8s ease-in;
+}
+
+.cup {
+	stroke-dasharray: 404.38372802734375px;
+	animation: c-visible .8s ease-in;
+}
+
+.gift {
+	stroke-dasharray: 201.93719482421875px;
+	animation: g-visible .8s ease-in;
+}
